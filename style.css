@@ -1,0 +1,17 @@
+html {
+    background-color: cadetblue;
+}
+
+#textEntryWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-items: center;
+}
+
+.btn {
+    padding: 3px;
+    border: 2px black solid;
+    margin: 4px;
+}
