@@ -8,7 +8,29 @@ var clearTxtBtn = document.querySelector("#clearTxtBtn");
 textEntry.focus();
 
 function countVowels() {
-    // to be filled in
+    // read txt, turn into array
+    var txtToCount = textEntry.value;
+    var txtArray = Array.from(txtToCount);
+
+    // count vowels across array
+    let vowelCount = 0;
+    var allVowels = txtArray.filter(
+        (letter) =>
+        letter == "a" ||
+        letter == "A" ||
+        letter == "e" ||
+        letter == "E" ||
+        letter == "i" ||
+        letter == "I" ||
+        letter == "o" ||
+        letter == "O" ||
+        letter == "u" ||
+        letter == "U" ||
+        letter == "y" ||
+        letter == "Y"
+    );
+    var result = allVowels.length;
+    console.log(result);
 }
 
 function displayVowels() {
