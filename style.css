@@ -2,6 +2,10 @@ html {
     background-color: cadetblue;
 }
 
+h1 {
+    text-align: center;
+}
+
 #textEntryWrapper {
     display: flex;
     flex-direction: column;
