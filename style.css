@@ -2,7 +2,8 @@ html {
     background-color: cadetblue;
 }
 
-h1 {
+h1,
+h3 {
     text-align: center;
 }
 

@@ -31,10 +31,12 @@ function countVowels() {
     );
     var result = allVowels.length;
     console.log(result);
+    return result;
 }
 
-function displayVowels() {
-    // to be filled in...
+function displayVowels(result) {
+    console.log(`displayVowels function called. Value of result is ${result}.`);
+    resultDisplay.innerHTML = `The number of vowels in your text is ${result}.`;
 }
 
 function clearText() {
@@ -44,8 +46,8 @@ function clearText() {
 
 // event listener on Count the Vowels! button:
 countVowelsBtn.addEventListener("click", function() {
-    countVowels();
-    displayVowels();
+    var result = countVowels();
+    displayVowels(result);
 });
 
 // event listener on clear txt button:
